@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+  h1 {
+    @apply font-extrabold lg:text-5xl text-2xl;
+  }
+  
+  h2 {
+    @apply font-bold lg:text-3xl text-lg;
+  }
+  p{
+    @apply lg:text-sm text-xs 
+  }
+  form{
+    @apply py-10 px-5
+  }
+  input{
+    @apply w-full 
+  }
+
+
+
