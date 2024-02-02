@@ -1,40 +1,37 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { LoadButton } from "../Components/ButtonLoad";
 import { auth } from "../../firbaseConfig";
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { UserContext } from "../ContextApi/UserContext";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
-export  function Signup (){
-const [username, setUsername] = useState("")
+export  function Login(){
 const [email, setEmail] = useState("")
 const [password, setPassword] = useState("")
 const navigate = useNavigate();
 const [errorState, setErrorState] = useState("");
-const { updateUser } = useContext(UserContext);
 
-
-const createAccount = async (e) => {
+const signIn = async (e) => {
   e.preventDefault();
 
    if (!email || !password) {
     console.error('Please provide both email and password.');
-    setErrorState('Please recheck and input email and password.');
+    setErrorState('Please recheck and input correct credentials.');
     return;
+  }
+  if ('auth/wrong-password'){
+    setErrorState('Please check your Password')
   }
 
   try {
-    await createUserWithEmailAndPassword(auth, email, password);
+    await signInWithEmailAndPassword(auth, email, password);
     // const user = userCredential.user;
 
     navigate('/dashboard');
   } catch (error) {
     console.error('Authentication Error:', error);
   }
-  updateUser(username)
 
 };
 
@@ -44,29 +41,16 @@ const createAccount = async (e) => {
 return (
   <>
     <div className="py-32 flex justify-center ">
-      <form className="lg:w-[400px] w-80 border bg-white border-slate-300 rounded-md shadow-md">
+      <form className="lg:w-[400px] border bg-white border-slate-300 rounded-md shadow-md">
         <div>
           <h1>
-            Signup
+            Login
           </h1>
 
 
           <p className="w-56 py-5">
-            Create an account by filling the information below
+            Input your email and Password to log into your account
           </p>
-        </div>
-
-        <div className="rounded-md">
-        <label htmlFor="username">
-          Username
-          <br />
-            <input type="text" 
-            className="rounded-md mb-5"
-            id="username"
-            required 
-            value={username}
-            onChange={(e)  => setUsername(e.target.value)} />
-        </label>
         </div>
 
         <div>
@@ -97,17 +81,17 @@ return (
           </div>
     )}
         <div>
-          <button className="w-full "    onClick={createAccount} >
+          <button className="w-full "    onClick={signIn} >
             <LoadButton text="Create Account"  />
           </button>
           
         </div>
-
         <div className="p-3">
-          <Link to="/login" className="">
-            Already Have an Account? <span className="text-blue-500 font-extrabold">Login</span>
+          <Link to="/" className="">
+            Dont Have an Account? <span className="text-blue-500 font-extrabold">Signup</span>
           </Link> 
         </div>
+             
         
       </form>
     </div>

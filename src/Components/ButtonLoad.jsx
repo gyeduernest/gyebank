@@ -14,7 +14,7 @@ export const LoadButton = (props) => {
       setTimeout(() => {
         // Reset the loading state after the operation is complete
         setLoading(false);
-      }, 6000);
+      }, 3000);
     }
   };
 
