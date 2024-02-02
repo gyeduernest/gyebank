@@ -22,6 +22,13 @@
   input{
     @apply w-full 
   }
+  .Dashboard:active{
+    @apply text-slate-50 bg-[#d4d4d4]
+
+  }
+  .Dashboard{
+    @apply bg-slate-200
+  }
 
 
 

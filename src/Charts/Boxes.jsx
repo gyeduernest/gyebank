@@ -6,6 +6,7 @@ import { ProgressBars } from "./Progress";
 import { Pendingbills } from "./Pendingbills";
 import { CurrencyConverter } from "./CurrencyConverter";
 import Yellowalert from "../Components/Yellowalert";
+import { PaymentMethod } from "../Components/PaymentMethod";
 
 
 export const Boxes = () => (
@@ -18,22 +19,10 @@ export const Boxes = () => (
     </Card>
   </Col>
   <Card className="mb-5">
-      <div className=" mb-2 border rounded-md text-center py-2">
-      <Title className="font-inter font-medium"> Payment Method</Title>
-          <img src={Mastercard} alt="" className="w-full h-32" />
-
+      <div className=" mb-2 border rounded-md text-center">
+          <PaymentMethod/>
       </div>
-      <div className="flex lg:gap-3 justify-center gap-5 mb-10 lg:mb-5">
-      <button className="btn  btn-active btn-secondary">
-          <p className="text-xs">Add Method</p>
-      </button>
-      <button className="btn bg-slate-800 text-slate-50">
-          <p className="text-xs">
-            Change Method
-          </p>
-      </button>
-        
-      </div>
+      
       
       <SecondChart/>
 
