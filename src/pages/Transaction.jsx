@@ -12,7 +12,7 @@ export default function Transaction() {
                 <Navigation/>
                 <Allcards/>
                 <div className="  lg:max-w-screen-2xl flex justify-center py-5 mb-40   mx-auto">
-                  <div className="lg:ml-[500px]">
+                  <div className="">
                   <TransactionGrid/>
 
                   </div>

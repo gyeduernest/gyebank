@@ -100,7 +100,7 @@ function Navigation() {
 {/* 
         Darkmode changed */}
 
-          <div className="mb-20 flex justify-center">
+          <div className="mb-10 flex justify-center">
             <Swap/>
           </div>
 

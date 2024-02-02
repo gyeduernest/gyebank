@@ -1,6 +1,8 @@
 import { useState } from "react";
-import Dashboard from "../assets/Dashboard.svg"
-export const LoadButton = () => {
+
+
+
+export const LoadButton = (props) => {
   const [loading, setLoading] = useState(false);
 
   const handleButtonClick = () => {
@@ -24,8 +26,8 @@ export const LoadButton = () => {
         </>
       ) : (
         <>
-          <img src={Dashboard} alt="" />
-          Get Account
+          
+          {props.text}
         </>
       )}
     </button>

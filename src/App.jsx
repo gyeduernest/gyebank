@@ -4,6 +4,7 @@ import Transaction from "./pages/Transaction"
 import Bills from "./pages/Bills"
 import Account from "./pages/Account"
 import Extras from "./pages/Extras"
+import { Signup } from "./pages/Signup"
 
 
 
@@ -17,6 +18,7 @@ function App() {
          <BrowserRouter>
            
             <Routes>
+                  <Route path="/" element={<Signup/>}/>
                   <Route path="/dashboard" element={<Dashboard/>}/>
                   <Route path="/transaction" element={<Transaction/>}/>
                   <Route path="/extras" element={<Extras/>}/>

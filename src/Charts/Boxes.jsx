@@ -7,6 +7,7 @@ import { Pendingbills } from "./Pendingbills";
 import { CurrencyConverter } from "./CurrencyConverter";
 import Yellowalert from "../Components/Yellowalert";
 import { PaymentMethod } from "../Components/PaymentMethod";
+import { Converter } from "../Components/Converter";
 
 
 export const Boxes = () => (
@@ -42,9 +43,7 @@ export const Boxes = () => (
 
   </Card>
   <Card className="mb-5">
-  <Title>Currency Converter</Title>
-      <CurrencyConverter/>
-    <Yellowalert/>
+  <Converter/>
   </Card>
   <Col className="col-span-2">
     <Card className="mb-5">

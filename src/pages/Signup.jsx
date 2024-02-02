@@ -5,7 +5,7 @@ import { TextInput } from "@tremor/react";
 
 
 
-export  const Signup = ()  => {
+export  function Signup (){
 const [username, setUsername] = useState("")
 const [email, setEmail] = useState("")
 const [password, setPassword] = useState("")
@@ -66,7 +66,8 @@ return (
         </div>
 
         <div>
-            <LoadButton/>
+          
+            <LoadButton text="Create Account" />
         </div>
 
              
