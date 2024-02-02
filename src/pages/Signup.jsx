@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { LoadButton } from "../Components/ButtonLoad";
-import { SearchIcon } from "@heroicons/react/solid";
-import { TextInput } from "@tremor/react";
+import { auth } from "../../firbaseConfig";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -9,22 +10,42 @@ export  function Signup (){
 const [username, setUsername] = useState("")
 const [email, setEmail] = useState("")
 const [password, setPassword] = useState("")
+const navigate = useNavigate();
+const [errorState, setErrorState] = useState("");
 
-const createAccount = (e) => {
+const createAccount = async (e) => {
+  e.preventDefault();
 
-}
+   if (!email || !password) {
+    console.error('Please provide both email and password.');
+    setErrorState('Please recheck and input email and password.');
+    return;
+  }
+
+  try {
+    await createUserWithEmailAndPassword(auth, email, password);
+    // const user = userCredential.user;
+
+    navigate('/dashboard');
+  } catch (error) {
+    console.error('Authentication Error:', error);
+  }
+
+};
 
 
 
 
 return (
   <>
-    <div className="py-10 flex justify-center ">
+    <div className="py-32 flex justify-center ">
       <form className="lg:w-[400px] border bg-white border-slate-300 rounded-md shadow-md">
         <div>
           <h1>
             Signup
           </h1>
+
+
           <p className="w-56 py-5">
             Create an account by filling the information below
           </p>
@@ -37,9 +58,9 @@ return (
             <input type="text" 
             className="rounded-md mb-5"
             id="username"
-             required 
-             value={username}
-             onChange={(e)  => setUsername(e.target.value)} />
+            required 
+            value={username}
+            onChange={(e)  => setUsername(e.target.value)} />
         </label>
         </div>
 
@@ -61,13 +82,20 @@ return (
           <input type="password" id="password" required  
                       className="rounded-md mb-5"
           value={password}
-             onChange={(e)  => setPassword(e.target.value)} />
+          onChange={(e)  => setPassword(e.target.value)} />
         </label>
         </div>
 
+    {errorState && (
+          <div className="text-red-600 text-end mt-2 mb-3 rounded-md px-3  py-2 text-xs font-semibold bg-red-100">
+            {errorState}
+          </div>
+    )}
         <div>
+          <button className="w-full "    onClick={createAccount} >
+            <LoadButton text="Create Account"  />
+          </button>
           
-            <LoadButton text="Create Account" />
         </div>
 
              
