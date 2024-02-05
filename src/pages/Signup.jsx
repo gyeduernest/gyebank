@@ -30,7 +30,7 @@ const createAccount = async (e) => {
     await createUserWithEmailAndPassword(auth, email, password);
     // const user = userCredential.user;
 
-    navigate('/dashboard');
+    navigate('/startpage');
   } catch (error) {
     console.error('Authentication Error:', error);
   }

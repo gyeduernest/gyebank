@@ -60,7 +60,7 @@ export const BillsDonut = () => {
         />
       </Card>
      <Card>
-     <PaymentMethod method="Change Method"  />
+     <PaymentMethod method="Pay my bills"  />
      </Card>
     </>
   );

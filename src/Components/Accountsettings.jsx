@@ -1,4 +1,3 @@
-import { TextInput } from "@tremor/react"
 import  Userone  from "../assets/Userone.png"
 
 
@@ -7,23 +6,13 @@ export default function Accountsettings() {
   return (
     <div className=" py-5">
           <div className="lg:ml-40 px-5  lg:flex md:flex flex flex-shrink gap-2 justify-center items-center">
-            <div><button className=" btn btn-info text-xs">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-            </svg>
-
-              <p className="hidden md:block lg:block">change</p>
-            </button></div>
-            <div><img src={Userone} alt="" className="w-32" /></div>
             <div>
-              <button className="btn btn-error text-xs">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-            </svg>
-
-            <p className="hidden  md:block lg:block">Remove</p>
-            </button>
-        </div>
+              <div className="">
+              <input type="file" className="file-input file-input-bordered file-input-secondary w-full max-w-xs" />              
+            </div></div>
+            <div className="p-3 border rounded-full border-slate-500">
+              <img src={Userone} alt="" className="" />
+            </div>
           </div>
 
           

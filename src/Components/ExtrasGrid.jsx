@@ -1,6 +1,7 @@
-import { Grid, Col, Card, Title, Text, Metric } from "@tremor/react";
+import { Grid, Col, Card, Title, Text, Metric, Badge } from "@tremor/react";
 import { Converter } from "./Converter";
 import FinanceGoals from "./FinanceGoals";
+import { Alertdialog } from "./Alertdialog";
 
 export function ExtrasGrid (){
   return(
@@ -21,18 +22,25 @@ export function ExtrasGrid (){
   </Col>
   <Col>
     <Card>
-      <Title>Title</Title>
-      <Metric>KPI 3</Metric>
+      <div className="flex justify-between">
+      <Title>Financial Advice</Title>
+      <Badge className="flex">Get Pro</Badge>
+      </div>
+      <div>
+    <Alertdialog  CTA="Get advice" title="Feature is not Avaliable" message="you cannot unlock this feature until you pay a fee to enable you gain access"  />      
+      </div>
     </Card>
   </Col>
   <Card>
-    <Text>Title</Text>
-    <Metric>KPI 4</Metric>
-  </Card>
-  <Card>
-    <Text>Title</Text>
-    <Metric>KPI 5</Metric>
-  </Card>
+      <div className="flex justify-between">
+      <Title>Get a Dollar Account</Title>
+      <Badge className="flex">Get Pro</Badge>
+      </div>
+      <div>
+    <Alertdialog CTA="Create Account" title="Feature is not Avaliable" message="you cannot unlock this feature until you pay a fee to enable you gain access"  />      
+      </div>
+    </Card>
+  
 </Grid>
 
   </div>

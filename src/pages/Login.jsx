@@ -28,7 +28,7 @@ const signIn = async (e) => {
     await signInWithEmailAndPassword(auth, email, password);
     // const user = userCredential.user;
 
-    navigate('/dashboard');
+    navigate('/startpage');
   } catch (error) {
     console.error('Authentication Error:', error);
   }

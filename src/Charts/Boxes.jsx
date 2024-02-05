@@ -1,13 +1,11 @@
 import { Grid, Col, Card, Text, Metric, Title } from "@tremor/react";
 import FirstChart from "./AreaChart";
 import { SecondChart } from "./Secondchart";
-import Mastercard from "../assets/Paymethods/mastercard.svg"
 import { ProgressBars } from "./Progress";
 import { Pendingbills } from "./Pendingbills";
-import { CurrencyConverter } from "./CurrencyConverter";
-import Yellowalert from "../Components/Yellowalert";
 import { PaymentMethod } from "../Components/PaymentMethod";
 import { Converter } from "../Components/Converter";
+import {Histogram } from "./Histogram";
 
 
 export const Boxes = () => (
@@ -21,7 +19,7 @@ export const Boxes = () => (
   </Col>
   <Card className="mb-5">
       <div className=" mb-2 border rounded-md text-center">
-          <PaymentMethod/>
+          <PaymentMethod method="Send money" />
       </div>
       
       
@@ -47,7 +45,7 @@ export const Boxes = () => (
   </Card>
   <Col className="col-span-2">
     <Card className="mb-5">
-     <FirstChart/>
+     <Histogram/>
     </Card>
   </Col>
 </Grid>

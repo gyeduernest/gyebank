@@ -6,6 +6,8 @@ import Account from "./pages/Account"
 import Extras from "./pages/Extras"
 import { Signup } from "./pages/Signup"
 import { Login } from "./pages/Login"
+import { UserProvider } from '../src/ContextApi/UserContext.jsx';
+import { Startpage } from "./pages/Startpage.jsx"
 
 
 
@@ -15,22 +17,26 @@ function App() {
 
   return (
     <>
-      <div className="dark:bg-slate-900 dark:text-slate-50 bg-slate-50 ">
+    <div className="dark:bg-slate-900 dark:text-slate-50 bg-slate-50 ">
+    <UserProvider>
          <BrowserRouter>
            
             <Routes>
                   <Route path="/" element={<Signup/>}/>
+                  <Route path="/startpage" element={<Startpage/>}/>
                   <Route path="/login" element={<Login/>}/>
                   <Route path="/dashboard" element={<Dashboard/>}/>
                   <Route path="/transaction" element={<Transaction/>}/>
                   <Route path="/extras" element={<Extras/>}/>
                   <Route path="/bills" element={<Bills/>}/>
                   <Route path="/account" element={<Account/>}/>
+      
             </Routes>          
                     
           </BrowserRouter> 
+      </UserProvider>  
 
-      </div>
+     </div>
       
 
     </>

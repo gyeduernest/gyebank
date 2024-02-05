@@ -35,20 +35,6 @@ Send Money</button>
     
   </Card>
   </Col>
-  <Col>
-    <Card>
-      <Title>Title</Title>
-      <Metric>KPI 3</Metric>
-    </Card>
-  </Col>
-  <Card>
-    <Text>Title</Text>
-    <Metric>KPI 4</Metric>
-  </Card>
-  <Card>
-    <Text>Title</Text>
-    <Metric>KPI 5</Metric>
-  </Card>
 </Grid>
 
   </div>
