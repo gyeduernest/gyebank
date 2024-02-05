@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-    <div className="dark:bg-slate-900 dark:text-slate-50 bg-slate-50 ">
+    <div className="bg-slate-50 ">
     <UserProvider>
          <BrowserRouter>
            

@@ -46,12 +46,12 @@ return (
     <div className="py-32 flex justify-center ">
       <form className="lg:w-[400px] w-80 border bg-white border-slate-300 rounded-md shadow-md">
         <div>
-          <h1>
+          <h1 className="text-black">
             Signup
           </h1>
 
 
-          <p className="w-56 py-5">
+          <p className="w-56 py-5 text-black">
             Create an account by filling the information below
           </p>
         </div>
