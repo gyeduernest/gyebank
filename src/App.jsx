@@ -8,6 +8,8 @@ import { Signup } from "./pages/Signup"
 import { Login } from "./pages/Login"
 import { UserProvider } from '../src/ContextApi/UserContext.jsx';
 import { Startpage } from "./pages/Startpage.jsx"
+import AddTransaction from "./Charts/AddTransaction.jsx"
+
 
 
 
@@ -18,6 +20,8 @@ function App() {
   return (
     <>
     <div className="bg-slate-50 ">
+      
+
     <UserProvider>
          <BrowserRouter>
            
@@ -30,11 +34,14 @@ function App() {
                   <Route path="/extras" element={<Extras/>}/>
                   <Route path="/bills" element={<Bills/>}/>
                   <Route path="/account" element={<Account/>}/>
+                  <Route path="/addtransaction" element={<AddTransaction/>}/>
       
             </Routes>          
                     
           </BrowserRouter> 
       </UserProvider>  
+      
+      
 
      </div>
       

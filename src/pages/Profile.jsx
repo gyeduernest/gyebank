@@ -25,7 +25,7 @@ function Navigation() {
 
    <div>
 
-   <div className="lg:flex md:flex sm:flex flex ">
+   <div className="lg:flex md:flex sm:flex z-50 flex  md:fixed top-0 absolute">
       {/* Side Navigation */}
 
     <div className=" z-50 lg:w-72 md:w-56 w-10 bg-white   border   lg:min-h-[800px] fixed lg:py-10 px-5 md:py-12 hidden  lg:block">

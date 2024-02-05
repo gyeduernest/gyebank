@@ -1,9 +1,15 @@
 
-import Income from "./Income";
+import Income from "./CurrentBalance";
 import Expenses from "./Expenses";
 import LastTransaction from "./LastTransaction";
 
-export const Allcards = () => (
+export const Allcards = () => {
+
+
+
+  return(
+
+
 <>
 
 <div className="lg:flex lg:gap-10 lg:justify-center   lg:mt-1 lg:py-0 mt-32 py-5 ">
@@ -27,3 +33,4 @@ export const Allcards = () => (
 </>
 
 );
+}
