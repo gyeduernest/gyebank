@@ -1,12 +1,14 @@
 import { BadgeDelta, Card, Metric, Text } from "@tremor/react";
+import { GlobalContext } from "../ContextApi/GlobalState";
+import { useContext } from "react";
 
 
 export default function CurrentBalance() {
-
-
-
-
-
+  const {transactions} = useContext(GlobalContext);
+  const amounts = transactions.map( transactions => transactions.amount)
+  const expense = amounts.reduce((acc, item)  => (acc += item), 0).toFixed(2)
+  const balance = 80000;
+  const currentBalance = balance - expense
 
 
   return (
@@ -18,7 +20,7 @@ export default function CurrentBalance() {
         <Text>Current Balance</Text>
         <BadgeDelta deltaType="moderateIncrease"/>
         </div>
-        <Metric>50,567</Metric>
+        <Metric>{currentBalance}</Metric>
       </Card>
     </div>
   )
