@@ -1,6 +1,6 @@
 import { Grid, Col, Card, Title, Text, Metric, Badge } from "@tremor/react";
 import { Converter } from "./Converter";
-import FinanceGoals from "./FinanceGoals";
+import FinanceGoal from "./FinanceGoal";
 import { Alertdialog } from "./Alertdialog";
 
 export function ExtrasGrid (){
@@ -16,7 +16,7 @@ export function ExtrasGrid (){
 
   <Col numColSpanLg={2} numColSpan={1}>
   <Card >
-    <FinanceGoals/>
+    <FinanceGoal/>
     
   </Card>
   </Col>

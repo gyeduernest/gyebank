@@ -3,8 +3,8 @@ import { Card, Flex, ProgressBar, Text } from "@tremor/react";
 
 
 
-export default function FinanceGoals() {
-
+export default function FinanceGoal() {
+    
 
 
 

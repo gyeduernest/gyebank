@@ -11,11 +11,15 @@ export default function SendMoney() {
 
   return (
         <>
-                        <CurrentBalance/>
+                       <div className='lg:flex justify-center py-10'>
+                       <div className='lg:flex'>
+                       <CurrentBalance/>
                         <Expenses/>
                         <LastTransaction/>
+                       </div>
                         <TransactionList/>
                         <AddTransaction/>
+                       </div>
         </>
       
       
