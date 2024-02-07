@@ -6,6 +6,10 @@ import AppReducer from "../Components/AppReducer";
 const initialState = {
         transactions: [
           
+        ],
+
+        goals:[
+
         ]
         
 
@@ -36,7 +40,20 @@ export const GlobalProvider = ({children}) => {
       payload: transaction
     })
   }
+  function addGoal(goals) {
+    dispatch({
+      type: 'ADD_GOAL',
+      payload: goals
+    });
+  }
+  function deleteGoal(id){
+    dispatch({
+      type:'DELETE_GOAL',
+      payload: id
+    });
+  }
   
+
 
 
     return (
@@ -46,9 +63,12 @@ export const GlobalProvider = ({children}) => {
           handleDelete,
           addTransaction,
           lastTransaction,
+          goals: state.goals,
+          addGoal,
+          deleteGoal
          
         }
-      } >
+        }   >
           {children}
       </GlobalContext.Provider>
             );
