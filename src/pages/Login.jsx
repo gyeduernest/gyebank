@@ -82,7 +82,7 @@ return (
     )}
         <div>
           <button className="w-full "    onClick={signIn} >
-            <LoadButton text="Create Account"  />
+            <LoadButton text="Log In"  />
           </button>
           
         </div>
