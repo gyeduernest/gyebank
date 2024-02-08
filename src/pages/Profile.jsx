@@ -162,7 +162,7 @@ function Navigation() {
 {/* 
    The Phone and Tablet Navigation */}
    
-<div className="block menu  md:w-screen sm:block md:block lg:hidden z-50 md:py-5 fixed top-[540px] md:top-[500px] md:px-10 w-full  ">
+<div className="block menu bg-white  md:w-screen sm:block md:block lg:hidden z-50 md:py-5 fixed top-[540px] md:top-[500px] md:px-10 w-full  ">
       <ul className="gap-5 menu md:py-5 menu-horizontal px-2 w-full bg-base-200 rounded-box mt-6 md:gap-12 justify-center items-center md:justify-between">
         <Link to="/dashboard">
 
