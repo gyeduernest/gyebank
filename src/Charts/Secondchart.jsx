@@ -55,8 +55,8 @@ const customTooltip = ({ payload, active }) => {
 export const SecondChart = () => {
   return (
     <>
-      <Card className="mx-auto max-w-xs">
-        <h3 className="text-slate-600 font-inter font-medium text-center"> Sales made per location </h3>
+      <Card className="mx-auto max-w-xs bg-white">
+        <h3 className="text-black font-inter font-medium text-center"> Sales made per location </h3>
         <DonutChart
           className="mt-6 h-24"
           data={cities}

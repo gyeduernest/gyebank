@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-    <div className="bg-slate-50 ">
+    <div className="bg-slate-50 text-black">
             <UserProvider>
               <GlobalProvider>
                 <BrowserRouter>

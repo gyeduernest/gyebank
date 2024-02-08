@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { Button, Dialog, DialogPanel, Title } from "@tremor/react";
 
@@ -6,7 +5,7 @@ export  function Alertdialog(props) {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <>
-      <div className="text-center px-16 py-10">
+      <div className="text-center px-16 py-10 bg-white text-black">
         <Button onClick={() => setIsOpen(true)} className="flex px-10"  >
           {props.CTA}
         </Button>
@@ -21,7 +20,7 @@ export  function Alertdialog(props) {
             <Button className="text-red-500 border bg-white mr-5 hover:text-white " onClick={() => setIsOpen(false)}>
               cancel
             </Button>
-            <Button className="" onClick={() => setIsOpen(false)}>
+            <Button className=" bg-white text-black" onClick={() => setIsOpen(false)}>
               Start Process
             </Button>
           </div>

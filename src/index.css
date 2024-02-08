@@ -10,22 +10,31 @@
     @apply font-extrabold lg:text-5xl text-2xl;
   }
   
+  h3 {
+    @apply text-black  }
   h2 {
     @apply font-bold lg:text-3xl text-lg;
   }
   p{
     @apply lg:text-sm text-xs 
   }
+  label{
+    @apply text-black
+  }
   form{
-    @apply py-10 px-5
+    @apply py-10 px-5 bg-white text-black
   }
   input{
-    @apply w-full 
+    @apply w-full bg-white text-black
   }
   .Dashboard:active{
     @apply text-slate-50 bg-[#d4d4d4]
 
   }
+  Title{
+    @apply text-black
+  }
+ 
   .Transactions:active{
     @apply text-slate-50 bg-[#d4d4d4]
 
@@ -34,6 +43,7 @@
     @apply text-slate-50 bg-[#d4d4d4]
 
   }
+  
   .Bills:active{
     @apply text-slate-50 bg-[#d4d4d4]
 
@@ -42,6 +52,8 @@
     @apply text-slate-50 bg-[#d4d4d4]
 
   }
+  
+  
   
 
 

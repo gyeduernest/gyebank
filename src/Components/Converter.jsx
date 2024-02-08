@@ -38,11 +38,12 @@ const poundsRate = 15.54;
 
   return (
     <div>
-      <p className='text-xl mb-5 font-bold px-5'>Currency Converter </p>
-      <div className=" flex justify-center ">
+      <p className='text-xl mb-5 font-bold px-5 text-black'>Currency Converter </p>
+      <p className="text-xs px-5 text-center mb-5 text-black">Select the Currency Pair you want to convert</p>
+      <div className=" flex justify-center bg-white">
 
-<div role="tablist" className="tabs tabs-lifted">
-<input type="radio" name="my_tabs_2" role="tab" className="tab "  aria-label="U$D" />
+<div role="tablist" className="tabs tabs-lifted bg-white">
+<input type="radio" name="my_tabs_2" role="tab"  className="bg-white tab "  aria-label="U$D" />
 <div role="tabpanel" className="tab-content bg-base-100  rounded-box p-6">
   <input type="number" placeholder="U$D" value={dollars} className="mb-5 input input-bordered input-info w-full max-w-xs" onChange={handleDollars} />
   <br  />
@@ -57,11 +58,11 @@ const poundsRate = 15.54;
 
 </div>
 
-<input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="€UR"  />
+<input type="radio" name="my_tabs_2" role="tab"  className="tab" aria-label="€UR"  />
 <div role="tabpanel" className="tab-content bg-base-100  rounded-box p-6">
   <input type="number" placeholder="€UR" value={euros} onChange={handleEuros} className="mb-5 input input-bordered input-info w-full max-w-xs"  />
   <br  />
-<input type="number" placeholder="Gh₵" value={cedis} readOnly className=" input input-bordered input-success w-full max-w-xs" />
+<input checked type="number" placeholder="Gh₵" value={cedis} readOnly className=" input input-bordered input-success w-full max-w-xs" />
   <div className='flex justify-center mt-5'>
   <div>
     
@@ -73,7 +74,7 @@ const poundsRate = 15.54;
 
 </div>
 
-<input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="GBP£" />
+<input type="radio" name="my_tabs_2" role="tab"  className="tab" aria-label="GBP£" />
 <div role="tabpanel" className="tab-content bg-base-100  rounded-box p-6">
   <input type="number" placeholder="GBP£" value={pounds} onChange={handlePounds} className="mb-5 input input-bordered input-info w-full max-w-xs"  />
   <br  />

@@ -48,10 +48,10 @@ const customTooltip = ({ payload, active }) => {
 export const BillsDonut = () => {
   return (
     <>
-      <Card className="mb-5 mx-auto p-5 max-w-xs">
-        <Title className="text-center text-slate-600 font-inter font-medium">Bills Paid for Past Month </Title>
+      <Card className="mb-5 mx-auto p-5 max-w-xs bg-white text-black">
+        <Title className="text-center text-black font-inter font-medium">Bills Paid for Past Month </Title>
         <DonutChart
-          className="mt-6 h-24"
+          className="mt-6 h-24 bg-white text-black"
           data={category}
           category="cost"
           index="name"

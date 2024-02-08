@@ -2,7 +2,7 @@
 
 export default function BillsComp() {
   return (
-    <div>
+    <div className="bg-white text-black">
        <h2>Bill payments</h2>
        <div className="py-10 grid grid-cols-3 gap-10">
 
@@ -99,7 +99,7 @@ export default function BillsComp() {
         </div>
        </div>
         <div className="w-full">
-       <button className="w-full btn btn-neutral"> Add Bill type</button>
+       <button className="w-full btn btn-primary"> Add Bill type</button>
 
         </div>
       

@@ -40,14 +40,14 @@ export default function AddTransaction() {
               <label htmlFor="text" className="font-semibold mb-3 ">
                 Short Description(Keep it very short)
               </label>
-              <TextInput placeholder="eg.Subscription for Netflix...." type="text" id="text" value={description} onChange={(e) => setDescription(e.target.value)} />
+              <TextInput placeholder="eg.Subscription for Netflix...." className="text-black bg-white" type="text" id="text" value={description} onChange={(e) => setDescription(e.target.value)} />
         </div>
 
         <div className="mb-5">
               <label htmlFor="amount" className="mb-4">
                 Cost
               </label>
-              <TextInput placeholder="eg.500..." type="number" id="amount" value={amount} onChange={(e) => setAmount(e.target.value)}/>
+              <TextInput placeholder="eg.500..." className="text-black bg-white" type="number" id="amount" value={amount} onChange={(e) => setAmount(e.target.value)}/>
         </div>
         <button className="btn w-full btn-primary"  >Make Bill Transaction</button>
         </form>

@@ -26,7 +26,7 @@ export function Histogram(){
   <Card>
     <Title>Expenses based on categories</Title>
     <BarChart
-      className="mt-6"
+      className="mt-6 text-black bg-white"
       data={chartdata}
       index="name"
       categories={["Cost"]}

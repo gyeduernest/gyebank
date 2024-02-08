@@ -6,7 +6,7 @@ import Accountsettings from '../Components/Accountsettings'
 
 export default function Account() {
   return (
-    <div className="dark:bg-slate-900 dark:text-slate-50 bg-slate-50">
+    <div className="dark:bg-slate-900 dark:text-slate-50 bg-white text-black">
     <Navigation/>
     <div className="">
        <Allcards/>

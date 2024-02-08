@@ -1,4 +1,3 @@
-"use client";
 import { AreaChart, Title } from "@tremor/react";
 
 const chartdata = [
@@ -40,11 +39,11 @@ const valueFormatter = function (number) {
 
 export default function FirstChart() {
   return (
-    <div className="">
-      <div className="lg:mb-12  h-96 lg:h-full md:h-full ">
-      <Title>Revenue Generated over time (USD)</Title>
+    <div className=" ">
+      <div className="lg:mb-12   h-96 lg:h-full md:h-full">
+      <Title className="text-black" >income Generated over time (USD)</Title>
       <AreaChart
-        className="lg:h-64 lg:mt-5  "
+        className="lg:h-64 lg:mt-5 bg-white"
         data={chartdata}
         index="date"
         yAxisWidth={65}
