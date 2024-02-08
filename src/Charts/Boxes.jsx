@@ -6,6 +6,7 @@ import { Pendingbills } from "./Pendingbills";
 import { PaymentMethod } from "../Components/PaymentMethod";
 import { Converter } from "../Components/Converter";
 import {Histogram } from "./Histogram";
+import FinanceGoal from "../Components/FinanceGoal";
 
 
 export const Boxes = () => (
@@ -21,33 +22,24 @@ export const Boxes = () => (
       <div className=" mb-2 border rounded-md text-center">
           <PaymentMethod method="Send money" />
       </div>
-      
-      
+      <div>
       <SecondChart/>
-
+      </div>
   </Card>
-  <Col className="">
+  <Col className="col-span-2">
     <Card className="mb-5">
-    <Title>Financial Goals</Title>
-      <ProgressBars/>
-      <ProgressBars/>
-      <ProgressBars/>
-      <ProgressBars/>
-      <button className="btn btn-primary w-full"> Add Financial Goal</button>
+    <FinanceGoal/>
     </Card>
   </Col>
-  <Card className="mb-5">
-    <Pendingbills/>
 
-  </Card>
-  <Card className="mb-5">
-  <Converter/>
-  </Card>
   <Col className="col-span-2">
     <Card className="mb-5">
      <Histogram/>
     </Card>
   </Col>
+  <div className="mb-5 bg-white rounded-md border p-2 py-5">
+  <Converter/>
+  </div>
 </Grid>
 </div>
 );

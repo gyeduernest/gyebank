@@ -56,7 +56,7 @@ export const SecondChart = () => {
   return (
     <>
       <Card className="mx-auto max-w-xs">
-        <Title className="text-slate-600 font-inter font-medium"> Sales made per location </Title>
+        <h3 className="text-slate-600 font-inter font-medium text-center"> Sales made per location </h3>
         <DonutChart
           className="mt-6 h-24"
           data={cities}
