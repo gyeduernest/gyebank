@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { UserContext } from "../ContextApi/UserContext";
 import { useContext } from "react";
 import Signout from "./Signout";
+import PhoneSignout from "./PhoneSignout";
 
 
 
@@ -143,11 +144,7 @@ function Navigation() {
           </svg>
 
             <img src={Userone} alt="" className="w-5" />
-           <button className="bg-red-500 rounded-md">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="block  sm:block md:block lg:hidden  w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          </svg>
-           </button>
+           <PhoneSignout/>
 
         </div>
         </div>
@@ -162,8 +159,8 @@ function Navigation() {
 {/* 
    The Phone and Tablet Navigation */}
    
-<div className="block menu bg-white  md:w-screen sm:block md:block lg:hidden z-50 md:py-5 fixed top-[540px] md:top-[500px] md:px-10 w-full  ">
-      <ul className="gap-5 menu md:py-5 menu-horizontal px-2 w-full bg-base-200 rounded-box mt-6 md:gap-12 justify-center items-center md:justify-between">
+<div className="block menu md:w-screen sm:block md:block lg:hidden z-50 md:py-5 fixed top-[550px] md:top-[500px] md:px-10 w-full  ">
+      <ul className="gap-5 py-2 md:py-5 menu-horizontal  w-full bg-blue-800 text-white rounded-box mt-6 md:gap-12 justify-center items-center md:justify-between">
         <Link to="/dashboard">
 
         <li>

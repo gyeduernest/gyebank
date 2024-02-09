@@ -53,6 +53,9 @@
     @apply text-slate-50 bg-[#d4d4d4]
 
   }
+  TextInput{
+    @apply bg-white text-black
+  }
   
   
   

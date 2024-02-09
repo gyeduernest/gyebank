@@ -39,11 +39,11 @@ const valueFormatter = function (number) {
 
 export default function FirstChart() {
   return (
-    <div className=" ">
-      <div className="lg:mb-12   h-96 lg:h-full md:h-full">
+    <div className="bg-white text-black ">
+      <div className="lg:mb-12 bg-white text-black   h-96 lg:h-full md:h-full">
       <Title className="text-black" >income Generated over time (USD)</Title>
       <AreaChart
-        className="lg:h-64 lg:mt-5 bg-white"
+        className="lg:h-64 lg:mt-5 bg-white text-black"
         data={chartdata}
         index="date"
         yAxisWidth={65}

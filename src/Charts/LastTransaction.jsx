@@ -17,7 +17,7 @@ const latestAmount = amounts.length > 0 ? amounts[0] : null;
 
   return (
     <div>
-      <Card className="lg:w-56  md:w-48  lg:mt-0  sm::mt-0 hover:bg-slate-50 bg-white text-black" decoration="top" decorationColor="yellow">
+      <Card className="lg:w-56  md:w-48  lg:mt-0  sm::mt-0 hover:bg-slate-50 bg-white text-black hover:text-black" decoration="top" decorationColor="yellow">
         <Text className="text-black">Last Transaction</Text>
         <Metric className="text-black">{latestAmount}</Metric>
       </Card>

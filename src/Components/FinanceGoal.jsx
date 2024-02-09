@@ -14,8 +14,8 @@ const {deleteGoal} = useContext(GlobalContext);
         <Title className="mb-5 text-black">
           Finance Goals
         </Title>
-        <div className="mb-3 bg-white " >
-          <div className=" bg-white">
+        <div className="mb-3" >
+          <div className=" ">
                   {goals.map((goal) => (
                     <div>
                       <ul className="mb-5 border  px-5 py-5 rounded-lg bg-white text-black">

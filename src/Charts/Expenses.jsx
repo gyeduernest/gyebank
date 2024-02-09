@@ -14,7 +14,7 @@ export default function Expenses() {
 
   return (
     <div>
-        <Card className="lg:w-56 hover:bg-slate-50 md:w-48 bg-white text-black  lg:mt-0   sm::mt-0" decoration="top" decorationColor="red">
+        <Card className="lg:w-56 hover:bg-slate-50 md:w-48 bg-white text-black  lg:mt-0   sm::mt-0 hover:text-black" decoration="top" decorationColor="red">
         <Text className="text-black"> Total Expenses</Text>
         <Metric className="text-black">{expense}</Metric>
       </Card>

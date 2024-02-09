@@ -15,7 +15,7 @@ export default function CurrentBalance() {
     <div>
 
       
-      <Card className="lg:w-56  md:w-48 lg:mt-0  sm::mt-0 text-black bg-white hover:bg-slate-50" decoration="top" decorationColor="green">
+      <Card className="lg:w-56  md:w-48 lg:mt-0  sm::mt-0 text-black bg-white hover:bg-slate-50 hover:text-black" decoration="top" decorationColor="green">
         <div className="flex justify-between">
         <Text className="text-black">Current Balance</Text>
         <BadgeDelta deltaType="moderateIncrease"/>

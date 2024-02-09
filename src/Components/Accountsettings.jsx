@@ -9,7 +9,7 @@ export default function Accountsettings() {
 
   
   return (
-    <div className=" py-5 bg-white">
+    <div className=" py-5 bg-white mb-20">
           <div className="lg:ml-40 px-5  lg:flex md:flex flex flex-shrink gap-2 justify-center items-center bg-white text-black">
             <div>
               <div className="">
